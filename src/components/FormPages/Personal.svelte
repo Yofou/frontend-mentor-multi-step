@@ -1,8 +1,14 @@
 <script lang="ts">
+	import { pageStage } from '../../utils/store'
 	import Input from '../form/Input.svelte'
+	import Button from '../form/Button.svelte'
+
+	const onNext = () => {
+		pageStage.update(i => i + 1)
+	}
 </script>
 
-<form class="max-w-[28.125rem] justify-self-center pt-10">
+<form class="max-w-[28.125rem] w-full justify-self-center pt-10 h-full flex flex-col">
 	<h2 class="text-heading text-Denim">Personal Info</h2>
 	<p class="text-body-l text-Grey">Please provide your name, email address, and phone number.</p>
 
@@ -10,5 +16,9 @@
 		<Input type="text" label="Name" placeholder="e.g. Stephen King" />
 		<Input type="text" label="Email Address" placeholder="e.g. stephenking@lorem.com" />
 		<Input type="text" label="Phone Number" placeholder="e.g. +1 234 567 890" />
+	</div>
+
+	<div class="w-full h-full flex justify-end items-end">
+		<Button on:click={onNext}>Next Step</Button>
 	</div>
 </form>

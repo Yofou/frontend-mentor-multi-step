@@ -2,9 +2,11 @@ import { writable, derived } from 'svelte/store'
 import Personal from '../components/FormPages/Personal.svelte'
 import { type Type } from './types'
 import type { SvelteComponent } from 'svelte';
+import SelectPlan from '../components/FormPages/SelectPlan.svelte'
+import PickAddon from '../components/FormPages/PickAddon.svelte'
 
 const STEPS = ['Your Info', 'Select Plan', 'Add-Ons', 'Summary'];
-const PAGE: Type<SvelteComponent>[] = [Personal]
+const PAGE: Type<SvelteComponent>[] = [Personal, SelectPlan, PickAddon]
 
 const getPageStage = () => {
 	const index = writable(0)
