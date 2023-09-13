@@ -1,5 +1,8 @@
 ---
-
+	import Form from '../layouts/Form.svelte'
+	import FormNav from '../components/shared/FormNav.svelte'
+	import FormPages from '../components/shared/FormPages.svelte'
+	import "@fontsource/ubuntu"
 ---
 
 <html lang="en">
@@ -11,6 +14,11 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<h1 class="sr-only">Multi-form</h1>
+
+		<Form>
+			<FormNav slot="nav" />
+			<FormPages slot="form" />
+		</Form>
 	</body>
 </html>
