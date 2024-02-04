@@ -11,9 +11,9 @@
 		{stepNumber}
 	</div>
 
-	<div class="flex flex-col text-left">
+	<div class="hidden md:flex flex-col text-left uppercase">
 		<p class="text-body-s text-LightBlue">Step {stepNumber}</p>
-		<p class="text-body-m font-bold uppercase text-White">{title}</p>
+		<p class="text-body-m font-bold uppercase text-White tracking-[.062rem]">{title}</p>
 	</div>
 </button>
 
