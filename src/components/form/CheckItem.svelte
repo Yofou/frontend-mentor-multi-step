@@ -20,7 +20,7 @@
 	}
 </script>
 
-<button type="button" class="w-full rounded-[.5rem] py-[1.13rem] text-left gap-6 items-center px-6 border border-BorderStyle grid grid-cols-[max-content,1fr,max-content]" on:click={onSelect} class:selected={isSelected}>
+<button type="button" class="w-full rounded-[.5rem] py-[.8rem] md:py-[1.13rem] text-left gap-4 md:gap-6 items-center px-4 md:px-6 border border-BorderStyle grid grid-cols-[max-content,1fr,max-content]" on:click={onSelect} class:selected={isSelected}>
 	
 	{#if isSelected}
 	<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +34,7 @@
 	{/if}
 	
 	
-	<div class="flex flex-col gap-[.44rem]">
+	<div class="flex flex-col gap-[.2rem] md:gap-[.44rem]">
 		<h3 class="text-body-l text-Denim font-medium">{title}</h3>
 		<p class="text-body-m leading-[1.25rem] text-Grey">{description}</p>
 	</div>

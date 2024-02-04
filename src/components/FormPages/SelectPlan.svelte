@@ -16,13 +16,13 @@
 	const onNext = () => pageStage.update(i => i + 1)
 </script>
 
-<form class="flex flex-col max-w-[28.125rem] w-full justify-self-center mt-[2.5rem]">
+<form class="flex flex-col max-w-[28.125rem] w-full justify-self-center md:mt-[2.5rem]">
 	<h2 class="text-heading text-Denim">Select your plan</h2>
 	<p class="text-body-l text-Grey mt-[.69rem]">
 		You have the option of monthly or yearly billing.
 	</p>
 
-	<div class="w-full grid grid-cols-3 mt-[2.19rem] gap-[1.12em]">
+	<div class="w-full grid auto-rows-max md:grid-cols-3 mt-[2.19rem] gap-[1.12em]">
 		<PlanCard 
 			title="Arcade" 
 			subtitle={$formData.isMonthly ? '$9/mo' : '$108/yr'}

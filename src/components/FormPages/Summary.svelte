@@ -8,7 +8,7 @@
 </script>
 
 <form class="max-w-[28.125rem] w-full mx-auto flex flex-col">
-	<h2 class="text-heading text-Denim mt-[2.5rem]">Finishing up</h2>
+	<h2 class="text-heading text-Denim md:mt-[2.5rem]">Finishing up</h2>
 	<p class="text-body-l text-Grey mt-[.69rem]">Double-check everything looks OK before confirming.</p>
 
 	<SummaryBox />

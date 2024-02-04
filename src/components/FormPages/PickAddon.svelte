@@ -10,7 +10,7 @@
 </script>
 
 <form class="max-w-[28.125rem] w-full mx-auto flex flex-col">
-	<h2 class="text-heading text-Denim mt-[2.5rem]">Pick add-ons</h2>
+	<h2 class="text-heading text-Denim md:mt-[2.5rem]">Pick add-ons</h2>
 	<p class="text-body-l text-Grey mt-[.69rem]">Add-ons help enhance your gaming experience.</p>
 
 	<CheckList class="mt-[2.19rem]" bind:value={$formData.addons}>

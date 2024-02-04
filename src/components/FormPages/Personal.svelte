@@ -32,7 +32,7 @@
 	}
 </script>
 
-<form class="max-w-[28.125rem] w-full justify-self-center pt-10 h-full flex flex-col">
+<form class="max-w-[28.125rem] w-full justify-self-center md:pt-10 h-full flex flex-col">
 	<h2 class="text-heading text-Denim">Personal Info</h2>
 	<p class="text-body-l text-Grey">Please provide your name, email address, and phone number.</p>
 
@@ -57,7 +57,7 @@
 		/>
 	</div>
 
-	<div class="fixed md:static bottom-0 left-0 p-4 md:p-0 bg-White md:bg-[transparent] flex w-full md:h-full justify-end items-end">
+	<div class="fixed md:static bottom-0 left-0 p-4 md:p-0 bg-White md:bg-[transparent] flex w-full md:h-full justify-end items-end boop" >
 		<Button on:click={onNext}>Next Step</Button>
 	</div>
 </form>

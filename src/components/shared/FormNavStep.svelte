@@ -6,7 +6,7 @@
 	$: stepNumber = index + 1
 </script>
 
-<button class="flex gap-4 items-center" on:click>
+<button class="flex gap-4 md:items-center" on:click>
 	<div class="w-8 h-8 rounded-full text-White outline outline-White outline-2 grid place-content-center text-body-m font-bold uppercase" class:active>
 		{stepNumber}
 	</div>
